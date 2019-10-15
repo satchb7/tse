@@ -1,0 +1,9 @@
+#!/bin/bash
+echo "Testing putting and getting from list, and putting and getting from empty list"
+runtest.sh ./listtest2
+echo "Testing applying function"
+runtest.sh ./listtest3
+echo "Testing removing test from list"
+runtest.sh ./listtest4
+echo "Running operations on empty list"
+runtest.sh ./listtest5

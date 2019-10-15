@@ -1,0 +1,18 @@
+#!/bin/bash
+
+echo "Testing opening and closing hashtable"
+runtest.sh ./hashtest1
+echo "Testing doing operations on empty hashtable"
+runtest.sh ./hashtest2
+echo "Testing putting data strcutures in hashtable"
+runtest.sh ./hashtest3
+echo "Testing applying function to hashtable"
+runtest.sh ./hashtest4
+echo "Testing searching and removing"
+runtest.sh ./hashtest5
+echo "Testing having multiple hashtables open"
+runtest.sh ./hashtest6
+echo "Testing all function in one long testfile"
+runtest.sh ./hashtest
+echo "running valgrind on all"
+runtest.sh valgrind.sh

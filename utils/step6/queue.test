@@ -1,0 +1,25 @@
+#!/bin/bash
+echo "Testing opening and closing queues"
+runtest.sh ./queuetest
+echo "Testing function on empty queue"
+runtest.sh ./queuetest3
+echo "Testing applying function to queue when empty and nonempty"
+runtest.sh ./queuetest4
+echo "Testing putting into empty and non-empty queue"
+runtest.sh ./queuetest5
+echo "Testing getting from a queue"
+runtest.sh ./queuetest6
+echo "Testing removing from a queue at different indexes"
+runtest.sh ./queuetest7
+echo "Testing whether a rmoved element is no longer in queue"
+runtest.sh ./queuetest8
+echo "Testing having multiple queues open at the same time and doing operation on them"
+runtest.sh ./queuetest9
+echo "Testing that the queue is agnositic"
+runtest.sh ./queuetest10
+echo "Testing concatenating two queues"
+runtest.sh ./queuetest11
+echo "Testing all functions in one long testfile"
+runtest.sh ./queuetest2
+echo "Running valgrind on all tests"
+runtest.sh valgrind.sh
